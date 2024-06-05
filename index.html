@@ -780,7 +780,7 @@ html {
 
 @media only screen and (min-width : 150px) and (max-width : 780px)
 {
-	{}
+	
 	.search
 	{
 		width: 95%;
@@ -1274,7 +1274,75 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Google Tag Manager (noscript) -->
 
+<!---------POP-UP STRUCTURE-------------->
+<style>
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 1000; /* Sit on top */
+    justify-content: center;
+    align-items: center;
+}
 
+.popup-content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 80%;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup-image {
+    max-width: 100%;
+    height: auto;
+}
+</style>
+
+<div id="popup" class="popup">
+	<div class="popup-content">
+		<span id="close-btn" class="close-btn">&times;</span>
+		<img src="/assets/bibaswan online flyer.jpeg" alt="Popup Image" class="popup-image">
+	</div>
+</div>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+    const popup = document.getElementById('popup');
+    const closeBtn = document.getElementById('close-btn');
+
+    function showPopup() {
+        popup.style.display = 'flex';
+    }
+
+    function hidePopup() {
+        popup.style.display = 'none';
+    }
+
+    closeBtn.addEventListener('click', hidePopup);
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 200) { // Change 200 to the scroll position you want
+            showPopup();
+            window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the popup
+        }
+    });
+});
+</script>
 
 
 <div class="header-top desktopdisplay">
