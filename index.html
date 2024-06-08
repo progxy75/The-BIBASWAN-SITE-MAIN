@@ -1290,26 +1290,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 
 .popup-content {
-    position: relative;
-    background-color: #fff;
+    position: absolute;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    max-width: 500px;
-    width: 80%;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
     text-align: center;
 }
 
 .close-btn {
-    position: absolute;
+    position: relative;
     top: 10px;
-    right: 10px;
-    font-size: 24px;
+    left: 295px;
+    font-size: 40px;
     cursor: pointer;
+	color: white;
 }
 
 .popup-image {
-    max-width: 100%;
+    max-width: 120%;
     height: auto;
 }
 </style>
@@ -1336,7 +1335,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     closeBtn.addEventListener('click', hidePopup);
 
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 200) { // Change 200 to the scroll position you want
+        if (window.scrollY > 100) { // Change 200 to the scroll position you want
             showPopup();
             window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the popup
         }
@@ -1548,9 +1547,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<ul class="popular-courses">
 				<li><a href="#">UPSC-CSE</a></li>
 				<li><a href="#">UPSC-NDA & CDS</a></li>
-				<li><a href="#" target="_blank">WBCS(EXE.)</a></li>
-				<li><a href="#" target="_blank">SSC-pro</a></li>
-				<li><a href="#" target="_blank">Railway</a></li>
+				<li><a href="#">WBCS(EXE.)</a></li>
+				<li><a href="#">SSC-pro</a></li>
+				<li><a href="#">Railway</a></li>
 				<li><a href="#">WBPSC</a></li>
 				<li><a href="#">Banking</a></li>
 				<li><a href="#">MANAGEMENT</a></li>
