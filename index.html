@@ -1226,32 +1226,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- End Google Tag Manager -->
 
-<!-- schema-start -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollegeOrUniversity",
-  "name": "Riceeducation",
-  "alternateName": "Riceeducation",
-  "url": "https://riceeducation.in/",
-  "logo": "https://ricesmart.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/06/23121714/RiceSmart-logo-opti-1-1-300x78.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "6292190230",
-    "contactType": "customer service",
-    "contactOption": "TollFree",
-    "areaServed": "IN",
-    "availableLanguage": ["en","Bengali"]
-  },
-  "sameAs": [
-    "https://www.facebook.com/RICEEducation85",
-    "https://www.linkedin.com/company/rice-smart",
-    "https://www.youtube.com/channel/UCXg9VlZz5c3O6t17LPMitzA",
-    "https://www.instagram.com/riceeducation85/"
-  ]
-}
-</script>
-<!-- schema-end -->
+
 
 
 </head> 
@@ -1274,9 +1249,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Google Tag Manager (noscript) -->
 
-<!---------POP-UP STRUCTURE-------------->
+<!---------POP-UP FIRST STRUCTURE-------------->
 <style>
-.popup {
+.popup1 {
     display: none; /* Hidden by default */
     position: fixed;
     top: 0;
@@ -1289,40 +1264,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     align-items: center;
 }
 
-.popup-content {
+.popup1-content {
     position: absolute;
     padding: 20px;
     border-radius: 15px;
-    max-width: 470px;
+    max-width: 500px;
     width: 90%;
     text-align: center;
 }
 
-.close-btn {
+.close-btn1 {
     position: relative;
     top: 20px;
-    left: 230px;
+    left: 250px;
     font-size: 40px;
     cursor: pointer;
 	color: white;
 }
 
-.popup-image {
+.popup1-image {
     max-width: 100%;
     height: auto;
+	cursor: pointer;
 }
 </style>
 
-<div id="popup" class="popup">
-	<div class="popup-content">
-		<span id="close-btn" class="close-btn">&times;</span>
-		<img src="/assets/railway crash course-flyer.jpg" alt="Popup Image" class="popup-image">
+<div id="popup1" class="popup1">
+	<div class="popup1-content">
+		<span id="close-btn1" class="close-btn1">&times;</span>
+		<a href="/Materials/plan/29.html"><img src="/assets/Crash course/UPSC-CSE course.jpg" alt="Popup Image" class="popup1-image"></a>
 	</div>
 </div>
 <script>
 	document.addEventListener('DOMContentLoaded', function() {
-    const popup = document.getElementById('popup');
-    const closeBtn = document.getElementById('close-btn');
+    const popup = document.getElementById('popup1');
+    const closeBtn = document.getElementById('close-btn1');
 
     function showPopup() {
         popup.style.display = 'flex';
@@ -1342,8 +1318,145 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 });
 </script>
-
-
+<!-------------------------END OF FIRST STRUCTURE--------->
+<!-----------POP-UP SECOND STRUCTURE------->
+<style>
+	.popup2 {
+		display: none; /* Hidden by default */
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+		z-index: 1000; /* Sit on top */
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.popup2-content {
+		position: absolute;
+		padding: 20px;
+		border-radius: 15px;
+		max-width: 400px;
+		width: 90%;
+		text-align: center;
+	}
+	
+	.close-btn2 {
+		position: relative;
+		top: 20px;
+		left: 200px;
+		font-size: 40px;
+		cursor: pointer;
+		color: white;
+	}
+	
+	.popup2-image {
+		max-width: 100%;
+		height: auto;
+	}
+	</style>
+	
+	<div id="popup2" class="popup2">
+		<div class="popup2-content">
+			<span id="close-btn2" class="close-btn2">&times;</span>
+			<a href="/ssc-rail-pro/index.html"><img src="/assets/Crash course/combined crash course.jpg" alt="Popup Image" class="popup2-image"></a>
+		</div>
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		const popup = document.getElementById('popup2');
+		const closeBtn = document.getElementById('close-btn2');
+	
+		function showPopup() {
+			popup.style.display = 'flex';
+		}
+	
+		function hidePopup() {
+			popup.style.display = 'none';
+		}
+	
+		closeBtn.addEventListener('click', hidePopup);
+	
+		window.addEventListener('scroll', function() {
+			if (window.scrollY > 400) { // Change 200 to the scroll position you want
+				showPopup();
+				window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the popup
+			}
+		});
+	});
+	</script>
+<!-----END OF SECOND STRUCTURE--------->
+<!----------POP UP THIRD STRUCTURE---------->
+<style>
+	.popup3 {
+		display: none; /* Hidden by default */
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+		z-index: 1000; /* Sit on top */
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.popup-content3 {
+		position: absolute;
+		padding: 20px;
+		border-radius: 15px;
+		max-width: 630px;
+		width: 90%;
+		text-align: center;
+	}
+	
+	.close-btn3 {
+		position: relative;
+		top: 20px;
+		left: 310px;
+		font-size: 45px;
+		cursor: pointer;
+		color: white;
+	}
+	
+	.popup3-image {
+		max-width: 100%;
+		height: auto;
+	}
+	</style>
+	
+	<div id="popup3" class="popup3">
+		<div class="popup-content3">
+			<span id="close-btn3" class="close-btn3">&times;</span>
+			<a href="/UPSC-CSE-main/UPSC-CSE-main/index.html"><img src="/assets/Crash course/UPSC Exam analysis.jpg" alt="Popup Image" class="popup3-image"></a>
+		</div>
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		const popup = document.getElementById('popup3');
+		const closeBtn = document.getElementById('close-btn3');
+	
+		function showPopup() {
+			popup.style.display = 'flex';
+		}
+	
+		function hidePopup() {
+			popup.style.display = 'none';
+		}
+	
+		closeBtn.addEventListener('click', hidePopup);
+	
+		window.addEventListener('scroll', function() {
+			if (window.scrollY > 800) { // Change 200 to the scroll position you want
+				showPopup();
+				window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the popup
+			}
+		});
+	});
+	</script>
+<!------END OF THIRD POPUP STRUCTURE------>
 <div class="header-top desktopdisplay">
 	<div class="container">
 		<div class="row">
@@ -1541,19 +1654,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		</div>
 	</div>
+<!---------------------START OF FLYER ON CLICK()------------------------------------>
 
+<!---------------------END OF FLYER SHOW-------------------------------------------->
 	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
 		<div class="wpb_wrapper">
 			<ul class="popular-courses">
-				<li><a href="#">UPSC-CSE</a></li>
-				<li><a href="#">UPSC-NDA & CDS</a></li>
-				<li><a href="#">WBCS(EXE.)</a></li>
-				<li><a href="#">SSC-pro</a></li>
-				<li><a href="#">Railway</a></li>
-				<li><a href="#">WBPSC</a></li>
-				<li><a href="#">Banking</a></li>
-				<li><a href="#">MANAGEMENT</a></li>
-				<li><a href="#">CLAT</a></li>
+				<li><a href="#" id="UPSC-CSE">UPSC-CSE</a></li>
+				<li><a href="#" id="UPSC-NDA&CDS">UPSC-NDA & CDS</a></li>
+				<li><a href="#" id="WBCS">WBCS(EXE.)</a></li>
+				<li><a href="#" id="SSCPRO">SSC-pro</a></li>
+				<li><a href="#" id="RAILWAY">Railway</a></li>
+				<li><a href="#" id="WBPSC">WBPSC</a></li>
+				<li><a href="#" id="BANKING">Banking</a></li>
+				<li><a href="#" id="MANAGEMENT">MANAGEMENT</a></li>
+				<li><a href="#" id="CLAT">CLAT</a></li>
 			</ul>
 		</div>
 	</div>
