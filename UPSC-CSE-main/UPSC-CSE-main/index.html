@@ -1267,7 +1267,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- End Google Tag Manager (noscript) -->
 
-
+<!------------------------START OF FLYER-------------->
+<style>
+	.popup {
+		display: none; /* Hidden by default */
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+		z-index: 1000; /* Sit on top */
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.popup-content {
+		position: absolute;
+		padding: 20px;
+		border-radius: 15px;
+		max-width: 500px;
+		width: 90%;
+		text-align: center;
+	}
+	
+	.close-btn {
+		position: relative;
+		top: 20px;
+		left: 250px;
+		font-size: 40px;
+		cursor: pointer;
+		color: white;
+	}
+	
+	.popup-image {
+		max-width: 100%;
+		height: auto;
+        cursor: pointer;
+	}
+	</style>
+	
+	<div id="popup" class="popup">
+		<div class="popup-content">
+			<span id="close-btn" class="close-btn">&times;</span>
+			<a href="/UPSC-CSE-main/UPSC-CSE-main/index.html"><img src="/assets/Crash course/UPSC-CSE course.jpg" alt="Popup Image" class="popup-image"></a>
+		</div>
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		const popup = document.getElementById('popup');
+		const closeBtn = document.getElementById('close-btn');
+	
+		function showPopup() {
+			popup.style.display = 'flex';
+		}
+	
+		function hidePopup() {
+			popup.style.display = 'none';
+		}
+	
+		closeBtn.addEventListener('click', hidePopup);
+	
+		window.addEventListener('scroll', function() {
+			if (window.scrollY > 100) { // Change 200 to the scroll position you want
+				showPopup();
+				window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the popup
+			}
+		});
+	});
+	</script>
+<!--------------------END OF FLYER-------------------->
     <div class="header-top desktopdisplay">
         <div class="container">
             <div class="row">
