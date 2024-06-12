@@ -1287,6 +1287,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		height: auto;
 		cursor: pointer;
 	}
+	/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .close-btn1 {
+        font-size: 35px; /* Adjusted font size for smaller screens */
+        top: 10px;
+        right: 10px;
+    }
+    .popup1-content {
+        padding: 15px; /* Adjusted padding for smaller screens */
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .close-btn1 {
+        font-size: 25px; /* Further adjusted font size for very small screens */
+        top: 5px;
+        right: 5px;
+    }
+    .popup1-content {
+        padding: 10px; /* Further adjusted padding for very small screens */
+        width: 100%;
+    }
+}
 	</style>
 	
 	<div id="popup1" class="popup1">
@@ -1356,6 +1380,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			max-width: 100%;
 			height: auto;
 		}
+		/* Media Queries */
+@media screen and (max-width: 768px) {
+    .popup2-content {
+        width: 80%;
+        padding: 15px;
+    }
+    
+    .close-btn2 {
+        font-size: 25px;
+        top: 5px;
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .popup2-content {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .close-btn2 {
+        font-size: 20px;
+        top: 2px;
+        right: 2px;
+    }
+}
 		</style>
 		
 		<div id="popup2" class="popup2">
@@ -1425,7 +1475,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			max-width: 100%;
 			height: auto;
 		}
-		</style>
+@media (max-width: 768px) {
+	.popup-content3 {
+		width: 95%;
+		padding: 15px;
+	}
+	.close-btn3 {
+		font-size: 35px;
+		top: 15px;
+		right: 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	.popup-content3 {
+		width: 100%;
+		padding: 10px;
+	}
+	.close-btn3 {
+		font-size: 25px;
+		top: 10px;
+		right: 10px;
+	}
+}
+</style>
 		
 		<div id="popup3" class="popup3">
 			<div class="popup-content3">
@@ -1449,7 +1522,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			closeBtn.addEventListener('click', hidePopup);
 		
 			window.addEventListener('scroll', function() {
-				if (window.scrollY > 3500) { // Change 200 to the scroll position you want
+				if (window.scrollY > 4000) { // Change 200 to the scroll position you want
 					showPopup();
 					window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the popup
 				}
