@@ -860,7 +860,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- End Google Tag Manager (noscript) -->
-
+<!-------------POP-UP FLYER IMPORTANCE-->
+<style>
+	.popup1 {
+		display: none; /* Hidden by default */
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+		z-index: 1000; /* Sit on top */
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.popup1-content {
+		position: absolute;
+		padding: 20px;
+		border-radius: 15px;
+		max-width: 400px;
+		width: 90%;
+		text-align: center;
+	}
+	
+	.close-btn1 {
+		position: relative;
+		top: 25px;
+		left: 200px;
+		font-size: 45px;
+		cursor: pointer;
+		color: white;
+	}
+	
+	.popup1-image {
+		max-width: 100%;
+		height: auto;
+		cursor: pointer;
+	}
+	</style>
+	
+	<div id="popup1" class="popup1">
+		<div class="popup1-content">
+			<span id="close-btn1" class="close-btn1">&times;</span>
+			<a href="/Materials/combined.html"><img src="/Notifications-main/Notifications-main/assets/ssc phase 12.jpeg" alt="Popup Image" class="popup1-image"></a>
+		</div>
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		const popup = document.getElementById('popup1');
+		const closeBtn = document.getElementById('close-btn1');
+	
+		function showPopup() {
+			popup.style.display = 'flex';
+		}
+	
+		function hidePopup() {
+			popup.style.display = 'none';
+		}
+	
+		closeBtn.addEventListener('click', hidePopup);
+	
+		window.addEventListener('scroll', function() {
+			if (window.scrollY > 100) { // Change 200 to the scroll position you want
+				showPopup();
+				window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the popup
+			}
+		});
+	});
+	</script>
+<!------------END OF POP-UP FLYER------->
 
 <div class="header-top desktopdisplay">
 	<div class="container">
@@ -886,10 +955,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<li id="menu-item-7367" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7367"><a href="/UPSC-CSE-main/UPSC-CSE-main/index.html">UPSC-CSE</a></li>
 								<li id="menu-item-7367" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7367"><a href="/UPSC-NDA-CDS/index.html">UPSC-NDA & CDS</a></li>
 								<li id="menu-item-611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-611"><a href="/The-WBCSpage-main/The-WBCSpage-main/index.html">WBCS</a></li>
-								<li id="menu-item-610" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-610"><a href="#nav-cat_28">WBPSC</a></li>
-								<li id="menu-item-8996" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-8996"><a href="#nav-cat_28">Combined Course</a></li>
+								<li id="menu-item-610" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-610"><a href="/wbcs-psc-pro/index.html">WBPSC</a></li>
+								<li id="menu-item-8996" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-8996"><a href="/ssc-rail-pro/index.html">Combined Course</a></li>
 								<li id="menu-item-9573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9573"><a href="/management-page-main/management-page-main/CAT-MAT-XAT-SNAP/index.html">Management Course</a></li>
-								<li id="menu-item-9626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9626"><a href="#">Law Entrance Course</a></li>
+								<li id="menu-item-9626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9626"><a href="/Law-entrance/clat/index.html">Law Entrance Course</a></li>
 							</ul>
 						</li>
 						<li id="menu-item-6622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6622"><a target="_blank" rel="noopener" href="#">Online Portal</a></li>
@@ -959,10 +1028,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7367"><a href="/UPSC-CSE-main/UPSC-CSE-main/index.html">UPSC-CSE</a></li>
 								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7367"><a href="/UPSC-NDA-CDS/index.html">UPSC-NDA & CDS</a></li>
 								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-611"><a href="/The-WBCSpage-main/The-WBCSpage-main/index.html">WBCS</a></li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-610"><a href="#nat-cat_28">WBPSC</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-8996"><a href="nav-cat_28">Combined Courses</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-610"><a href="/wbcs-psc-pro/index.html">WBPSC</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-8996"><a href="/ssc-rail-pro/index.html">Combined Courses</a></li>
 								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9573"><a href="/management-page-main/management-page-main/CAT-MAT-XAT-SNAP/index.html">Management Courses</a></li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9626"><a href="#">Law Entrance Course</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9626"><a href="/Law-entrance/clat/index.html">Law Entrance Course</a></li>
 							</ul>
 						</li>
 						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6622"><a target="_blank" rel="noopener" href="#">Online Portals</a></li>
@@ -1228,6 +1297,40 @@ margin-right:0px !important;
 	  <div class="row">
 	    <div class="col-md-12 col-sm-12 col-12 col-lg-12">
 		  <div class="all-news justify-content-center">
+			<div class="col-md-4 mb-30 news_item">
+				<h4 class="news_title"><a href="./assets/Border Security force notification.pdf" style="color:black !important;">Attention for the applicants of Sub-Inspector and Constable</a></h4>
+			<div class="news_date mb-10"><i class="fa fa-calendar" aria-hidden="true"></i> Railway Notice: </div>
+			<div class="read_more_div">
+			
+			<div class="col-md-12 col-sm-12 col-12 col-lg-12 flex-container">
+			
+			<div class="readmore_div">
+			
+			<!--<a href="https://www.ricesmart.in/latest-news-details/?news=sbi-po-notification-2023&news_id=9269" class="readmore_link">Read More</a>-->
+			<a href="./assets/Border Security force notification.pdf" class="readmore_link">Read More</a>
+			
+			</div>
+			
+				<div class="social_link">
+				  <div class="facebook">
+				  <a href="https://www.facebook.com/Bibaswans.e.f/" target="_blank" style="color:white !important">
+				  
+					<i class="fa fa-facebook" aria-hidden="true"></i></a>
+				  </div>
+				  
+				  <div class="linkedin">
+				  <a href="https://t.me/Bibaswan2024/" target="_blank" style="color:white;">
+					<i class="fa fa-telegram" aria-hidden="true"></i></a>
+				  </div>
+				 
+				
+				</div>
+			
+			</div>
+			
+			</div>
+			
+			</div>
 			<div class="col-md-4 mb-30 news_item">
 				<h4 class="news_title"><a href="./assets/sebi grade a.pdf" style="color:black !important;">SEBI GRADE A RECRUITMENT, 2024</a></h4>
 			<div class="news_date mb-10"><i class="fa fa-calendar" aria-hidden="true"></i> 11 JUNE, 2024</div>
