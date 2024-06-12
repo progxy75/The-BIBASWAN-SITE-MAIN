@@ -1251,77 +1251,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!---------POP-UP FIRST STRUCTURE-------------->
 <style>
-.popup1 {
-    display: none; /* Hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-    z-index: 1000; /* Sit on top */
-    justify-content: center;
-    align-items: center;
-}
-
-.popup1-content {
-    position: absolute;
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 700px;
-    width: 90%;
-    text-align: center;
-}
-
-.close-btn1 {
-    position: relative;
-    top: 20px;
-    left: 350px;
-    font-size: 45px;
-    cursor: pointer;
-	color: white;
-}
-
-.popup1-image {
-    max-width: 100%;
-    height: auto;
-	cursor: pointer;
-}
-</style>
-
-<div id="popup1" class="popup1">
-	<div class="popup1-content">
-		<span id="close-btn1" class="close-btn1">&times;</span>
-		<a href="/Materials/plan/29.html"><img src="/assets/Crash course/UPSC foundation batch flyer.jpg" alt="Popup Image" class="popup1-image"></a>
-	</div>
-</div>
-<script>
-	document.addEventListener('DOMContentLoaded', function() {
-    const popup = document.getElementById('popup1');
-    const closeBtn = document.getElementById('close-btn1');
-
-    function showPopup() {
-        popup.style.display = 'flex';
-    }
-
-    function hidePopup() {
-        popup.style.display = 'none';
-    }
-
-    closeBtn.addEventListener('click', hidePopup);
-
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 100) { // Change 200 to the scroll position you want
-            showPopup();
-            window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the popup
-        }
-    });
-});
-</script>
-<!-------------------------END OF FIRST STRUCTURE--------->
-<!-----------POP-UP SECOND STRUCTURE------->
-<style>
-	.popup2 {
+	.popup1 {
 		display: none; /* Hidden by default */
 		position: fixed;
 		top: 0;
@@ -1334,40 +1264,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		align-items: center;
 	}
 	
-	.popup2-content {
+	.popup1-content {
 		position: absolute;
 		padding: 20px;
 		border-radius: 15px;
-		max-width: 600px;
+		max-width: 700px;
 		width: 90%;
 		text-align: center;
 	}
 	
-	.close-btn2 {
+	.close-btn1 {
 		position: relative;
 		top: 20px;
-		left: 300px;
+		left: 350px;
 		font-size: 45px;
 		cursor: pointer;
 		color: white;
 	}
 	
-	.popup2-image {
+	.popup1-image {
 		max-width: 100%;
 		height: auto;
+		cursor: pointer;
 	}
 	</style>
 	
-	<div id="popup2" class="popup2">
-		<div class="popup2-content">
-			<span id="close-btn2" class="close-btn2">&times;</span>
-			<a href="#"><img src="/assets/Crash course/BANKING FOUNDATION BATCH.jpeg" alt="Popup Image" class="popup2-image"></a>
+	<div id="popup1" class="popup1">
+		<div class="popup1-content">
+			<span id="close-btn1" class="close-btn1">&times;</span>
+			<a href="/Materials/plan/29.html"><img src="/assets/Crash course/UPSC foundation batch flyer.jpg" alt="Popup Image" class="popup1-image"></a>
 		</div>
 	</div>
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
-		const popup = document.getElementById('popup2');
-		const closeBtn = document.getElementById('close-btn2');
+		const popup = document.getElementById('popup1');
+		const closeBtn = document.getElementById('close-btn1');
 	
 		function showPopup() {
 			popup.style.display = 'flex';
@@ -1380,82 +1311,151 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		closeBtn.addEventListener('click', hidePopup);
 	
 		window.addEventListener('scroll', function() {
-			if (window.scrollY > 1500) { // Change 200 to the scroll position you want
+			if (window.scrollY > 100) { // Change 200 to the scroll position you want
 				showPopup();
 				window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the popup
 			}
 		});
 	});
 	</script>
-<!-----END OF SECOND STRUCTURE--------->
-<!----------POP UP THIRD STRUCTURE---------->
-<style>
-	.popup3 {
-		display: none; /* Hidden by default */
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-		z-index: 1000; /* Sit on top */
-		justify-content: center;
-		align-items: center;
-	}
-	
-	.popup-content3 {
-		position: absolute;
-		padding: 20px;
-		border-radius: 15px;
-		max-width: 630px;
-		width: 90%;
-		text-align: center;
-	}
-	
-	.close-btn3 {
-		position: relative;
-		top: 20px;
-		left: 310px;
-		font-size: 45px;
-		cursor: pointer;
-		color: white;
-	}
-	
-	.popup3-image {
-		max-width: 100%;
-		height: auto;
-	}
-	</style>
-	
-	<div id="popup3" class="popup3">
-		<div class="popup-content3">
-			<span id="close-btn3" class="close-btn3">&times;</span>
-			<a href="/UPSC-CSE-main/UPSC-CSE-main/index.html"><img src="/assets/Crash course/Upsc exam analysis.jpg" alt="Popup Image" class="popup3-image"></a>
+	<!-------------------------END OF FIRST STRUCTURE--------->
+	<!-----------POP-UP SECOND STRUCTURE------->
+	<style>
+		.popup2 {
+			display: none; /* Hidden by default */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+			z-index: 1000; /* Sit on top */
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.popup2-content {
+			position: absolute;
+			padding: 20px;
+			border-radius: 15px;
+			max-width: 600px;
+			width: 90%;
+			text-align: center;
+		}
+		
+		.close-btn2 {
+			position: relative;
+			top: 20px;
+			left: 300px;
+			font-size: 45px;
+			cursor: pointer;
+			color: white;
+		}
+		
+		.popup2-image {
+			max-width: 100%;
+			height: auto;
+		}
+		</style>
+		
+		<div id="popup2" class="popup2">
+			<div class="popup2-content">
+				<span id="close-btn2" class="close-btn2">&times;</span>
+				<a href="#"><img src="/assets/Crash course/BANKING FOUNDATION BATCH.jpeg" alt="Popup Image" class="popup2-image"></a>
+			</div>
 		</div>
-	</div>
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-		const popup = document.getElementById('popup3');
-		const closeBtn = document.getElementById('close-btn3');
-	
-		function showPopup() {
-			popup.style.display = 'flex';
-		}
-	
-		function hidePopup() {
-			popup.style.display = 'none';
-		}
-	
-		closeBtn.addEventListener('click', hidePopup);
-	
-		window.addEventListener('scroll', function() {
-			if (window.scrollY > 2500) { // Change 200 to the scroll position you want
-				showPopup();
-				window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the popup
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			const popup = document.getElementById('popup2');
+			const closeBtn = document.getElementById('close-btn2');
+		
+			function showPopup() {
+				popup.style.display = 'flex';
 			}
+		
+			function hidePopup() {
+				popup.style.display = 'none';
+			}
+		
+			closeBtn.addEventListener('click', hidePopup);
+		
+			window.addEventListener('scroll', function() {
+				if (window.scrollY > 1500) { // Change 200 to the scroll position you want
+					showPopup();
+					window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the popup
+				}
+			});
 		});
-	});
-	</script>
+		</script>
+	<!-----END OF SECOND STRUCTURE--------->
+	<!----------POP UP THIRD STRUCTURE---------->
+	<style>
+		.popup3 {
+			display: none; /* Hidden by default */
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+			z-index: 1000; /* Sit on top */
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.popup-content3 {
+			position: absolute;
+			padding: 20px;
+			border-radius: 15px;
+			max-width: 630px;
+			width: 90%;
+			text-align: center;
+		}
+		
+		.close-btn3 {
+			position: relative;
+			top: 20px;
+			left: 310px;
+			font-size: 45px;
+			cursor: pointer;
+			color: white;
+		}
+		
+		.popup3-image {
+			max-width: 100%;
+			height: auto;
+		}
+		</style>
+		
+		<div id="popup3" class="popup3">
+			<div class="popup-content3">
+				<span id="close-btn3" class="close-btn3">&times;</span>
+				<a href="/UPSC-CSE-main/UPSC-CSE-main/index.html"><img src="/assets/Crash course/Upsc exam analysis.jpg" alt="Popup Image" class="popup3-image"></a>
+			</div>
+		</div>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			const popup = document.getElementById('popup3');
+			const closeBtn = document.getElementById('close-btn3');
+		
+			function showPopup() {
+				popup.style.display = 'flex';
+			}
+		
+			function hidePopup() {
+				popup.style.display = 'none';
+			}
+		
+			closeBtn.addEventListener('click', hidePopup);
+		
+			window.addEventListener('scroll', function() {
+				if (window.scrollY > 2500) { // Change 200 to the scroll position you want
+					showPopup();
+					window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the popup
+				}
+			});
+		});
+		</script>
 <!------END OF THIRD POPUP STRUCTURE------>
 <div class="header-top desktopdisplay">
 	<div class="container">
