@@ -926,29 +926,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
 }
 
-/* Styles for tablets and small desktops */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .popup1-content {
-        width: 80%;
-        padding: 25px;
-    }
-
+@media (max-width: 1320px) {
     .close-btn1 {
-        font-size: 28px;
+	    position: relative;
+        font-size: 40px; /* Adjusted font size for smaller screens */
+        top: 10px;
+        left: 150px;
+    }
+    .popup1-content {
+		position:absolute;
+		max-width: 320px;
+        padding: 15px; /* Adjusted padding for smaller screens */
+        width: 95%;
     }
 }
 
-/* Styles for desktops and large screens */
-@media (min-width: 1025px) {
-    .popup1-content {
-        width: 70%;
-        padding: 30px;
-    }
-
-    .close-btn1 {
-        font-size: 32px;
-    }
-}
 	</style>
 	
 	<div id="popup1" class="popup1">
@@ -1044,29 +1036,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
 }
 
-/* Styles for tablets and small desktops */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .popup2-content {
-        width: 80%;
-        padding: 25px;
-    }
-
+@media (max-width: 1320px) {
     .close-btn2 {
-        font-size: 28px;
+	    position: relative;
+        font-size: 40px; /* Adjusted font size for smaller screens */
+        top: 10px;
+        left: 150px;
+    }
+    .popup2-content {
+		position:absolute;
+		max-width: 320px;
+        padding: 15px; /* Adjusted padding for smaller screens */
+        width: 95%;
     }
 }
 
-/* Styles for desktops and large screens */
-@media (min-width: 1025px) {
-    .popup2-content {
-        width: 70%;
-        padding: 30px;
-    }
 
-    .close-btn2 {
-        font-size: 32px;
-    }
-}
 	</style>
 	
 	<div id="popup2" class="popup2">
